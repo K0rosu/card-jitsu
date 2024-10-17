@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Card-Jitsu HTML5</title>
+    <script type="text/javascript" src="engine.js"></script>
+    <script type="text/javascript" src="cards.js"></script>
+    <script type="text/javascript" src="setup.js"></script>
+    <link rel="icon" href="logo.png">
+  </head>
+  <body>
+    <div id="banner">
+      <h1>Card-Jitsu HTML5</h1>
+      <h2>Created by Marcelo Seithi</h2>
+    </div>
+    <div id="game">
+      <div id="tophalf">
+        <!-- Player collection card icons (elements and colours) -->
+        <div id="playerCollection">
+          <div id="colPlayerFire"></div>
+          <div id="colPlayerSnow"></div>
+          <div id="colPlayerWater"></div>
+        </div>
+        <!-- Player's card vs Bot's card -->
+        <div id="battleContainer">
+          <div id="battle">
+            <!--<div class="battleBlock"></div>-->
+            <div id="cardPlayer">
+              <img class="art" src="images/card.svg">
+              <img class="frame">
+              <img class="element">
+              <img class="power">
+            </div>
+            <div id="versus">
+              <p>VS</p>
+            </div>
+            <div id="cardBot">
+              <img class="art" src="images/card.svg">
+              <img class="frame">
+              <img class="element">
+              <img class="power">
+            </div>
+            <!--<div class="battleBlock"></div>-->
+          </div>
+        </div>
+        <!-- Bot collection card icons (elements and colours) -->
+        <div id="botCollection">
+          <div id="colBotFire"></div>
+          <div id="colBotSnow"></div>
+          <div id="colBotWater"></div>
+        </div>
+      </div>
+      <!-- Deck and container -->
+      <div id="entireDeck">
+        <img src="images/deck-lid.svg" id="decklid">
+        <!-- Deck of cards dealt to the player -->
+        <div id="deckContainer"><div id="deck"></div></div>
+      </div>
+    </div>
+    <!-- Game Won Display -->
+    <div id="winningCards">
+      <div id="winCards">
+        <div class="icon" id="wc0">
+          <img class="frameIcon">
+          <img class="elementIcon">
+        </div>
+        <div class="icon" id="wc1">
+          <img class="frameIcon">
+          <img class="elementIcon">
+        </div>
+        <div class="icon" id="wc2">
+          <img class="frameIcon">
+          <img class="elementIcon">
+        </div>
+      </div>
+      <div id="winText">
+        <p id="winTextA">[Winner] Wins</p>
+        <p id="winTextB">Click anywhere to start a new game</p>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="design.js"></script>
+</html>
+<link rel="stylesheet" href="design.css">
